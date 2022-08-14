@@ -216,7 +216,7 @@ test/
 ---
 ## Resources
 
-> TODO: Add your favorite Git resources (at least 1)
+[Git Guides](https://github.com/git-guides) Guides to Git from start to advanced commands and workflows.
 
 [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.     
 [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
