@@ -15,8 +15,6 @@
 
 ## Using Git
 
-> TODO: Create a table of contents here.  Each line should be a clickable link to each part of this document or another file containing the questions and answers. One item per line.
-
 [Basics](#basics)    
 [Adding and Changing Things](#adding-and-changing-things)    
 [Undo Changes and Recover Files](#Undo-Changes-and-Recover-Files)  
@@ -33,24 +31,26 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 ## Basics
 
 1. When using Git locally, what are these?  Define each one in a sentence
-   * Staging area -
-   * Working copy -
-   * master -
-   * HEAD -
+   * Staging area - Files that are going to be a part of the next commit by using `git add`.
+   * Working copy - A copy of an existing Git repository.
+   * master - The default branch name in Git.
+   * HEAD - A pointer to the local branch you're currently on.
+
 
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
    ```
-   # Git configuration commands for a new account
-
-
+   git config --global user.name "your-name"
+   git config --global user.email "your-email"
    ```
 
 3. There are 2 ways to create a local Git repository.  What are they?
-   - todo: briefly describe first way
-   - todo: briefly describe second way
+   - `git clone`: clone the existing Git repository
+   - `git init`: create a new repository
+   
 
 4. When you create a git repository by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for this local repository (relative to the directory where you typed "git init")?
 
+   - It will create a subdirectory named `.git` that contains all of your necessary repository files.
 
 
 ## Adding and Changing Things
