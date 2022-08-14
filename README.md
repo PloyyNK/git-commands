@@ -31,10 +31,10 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 ## Basics
 
 1. When using Git locally, what are these?  Define each one in a sentence
-   * Staging area - Files that are going to be a part of the next commit by using `git add`.
+   * Staging area - (or can be called 'Index') Files and changes that marked to be commit next.
    * Working copy - A copy of an existing Git repository.
    * master - The default branch name in Git.
-   * HEAD - A pointer to the local branch you're currently on.
+   * HEAD - A pointer to the local branch you're currently working on.
 
 
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
@@ -66,42 +66,55 @@ src/a.py
 test/
     test_a.py
     ...
-```     
-> TODO: Write the git command to perform each of these:
+```
 
 1. Add README.md and *everything* in the `src` directory to the git staging area.
    ```
-   todo  your answer here
+   git add README.md
+   git add src
    ```
 
 2. Add `test/test_a.py` to the staging area (but not any other files).
    ```
-   todo  your answer here
+   git add test/test_a.py
    ```
 
 3. List the files in the staging area.
-
-
+   ```
+   git diff --staged
+   ```
 4. Remove `README.md` from the staging area. (Useful if you accidentally add something you don't want to commit.)
+   ```
+   git reset HEAD README.md
+   ```
 
+6. Commit everything in the staging area to the repository.
+   ```
+   git commit -m 'Initial commit'
+   ```
 
-5. Commit everything in the staging area to the repository.
+7.Describe 2 steps to configure the repository so git will ignore all files in the `out/` directory:
+   - step one: create a file named `.gitignore`. 
+   - step two: put `out/` to ignore the directory and commit the file.
 
+8.Command to move all the .py files from `src` to the top-level directory of this repository, so they are also moved in the Git repo.
+   ```
+   git mv src/* .
+   ```
 
-6. Describe 2 steps to configure the repository so git will ignore all files in the `out/` directory:
-   - step one
-   - step two
+9.Commit this change with the message "moved src directory":
+   ```
+   git commit -m "moved src directory"
+   ```
+10.Command to add **all changed files** (but not untracked files) to the staging area using a single command.
+   ```
+   gid add -u
+   ```
 
-7. Command to move all the .py files from `src` to the top-level directory of this repository, so they are also moved in the Git repo.
-
-
-8. Commit this change with the message "moved src directory":
-
-
-9. Command to add **all changed files** (but not untracked files) to the staging area using a single command.
-
-
-10. **Delete** the file `c.py` from your working copy **and** the repository:
+11.**Delete** the file `c.py` from your working copy **and** the repository:
+   ```
+   git rm c.py
+   ```
 
 
 
