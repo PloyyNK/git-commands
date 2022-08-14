@@ -209,9 +209,7 @@ test/
 
 ## Favorites
 
-> TODO: Add *at least* 1 git task that (a) that you'd like to remember, or (b) you think is really useful, and the git command(s) to do it.
-
-
+- Create new directory: `mkdir <file-name>`
 
 ---
 ## Resources
