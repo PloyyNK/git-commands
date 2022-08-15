@@ -122,25 +122,37 @@ test/
 
 > TODO: enter the git command to do each of these
 
-1.  Display the differences between your *working copy* of `a.py` and the `a.py` in the *local repository* (HEAD revision):
-
+1. Display the differences between your *working copy* of `a.py` and the `a.py` in the *local repository* (HEAD revision):
+   ```
+   
+   ```
 2. Display the differences between your *working copy* of `a.py` and the version in the *staging area*. (But, if a.py is not in the staging area this will compare working copy to HEAD revision):
-
+   ```
+   
+   ```
 3. **View changes to be committed:** Display the differences between files in the staging area and the versions in the repository. (You can also specify a file name to compare just one file.) 
-
+   ```
+   
+   ```
 
 4. **Undo "git add":** If `main.py` has been added to the staging area (`git add main.py`), remove it from the staging area:
-
+   ```
+   
+   ```
 
 5. **Recover a file:** Command to replace your working copy of `a.py` with the most recent (HEAD) version in the repository.  This also works if you have deleted your working copy of this file.
-
+   ```
+   
+   ```
 
 6. **Undo a commit:** Suppose you want to discard some commit(s) and move both HEAD and "master" to an earlier revision (an earlier commit)  Suppose the git commit graph looks like this (`aaaa`, etc, are the commit ids)
    ```
    aaaa ---> bbbb ---> cccc ---> dddd [HEAD -> master]
    ``` 
    The command to reset HEAD and master to the commit id `bbbb`:
-
+   ```
+   
+   ```
 
 7. **Checkout old code:** Using the above example, the command to replace your working copy with the files from commit with id `aaaa`:
    ```
@@ -183,27 +195,40 @@ test/
 
 > TODO write the commands to do each of these
 1. Create a new branch named `dev-foo`:
+   ```
+   git checkout -b dev-foo
+   ```
  
 2. Display the name of your current branch:
+   ```
+   git branch –show-current
+   ```
 
 3. List the names of **all** branches, including remote branches:
+   ```
+   git branch -a
+   ```
 
 4. Switch your working copy to the branch named `dev-foo`:
+   ```
+   git checkout dev-foo
+   ```
 
-5. **Merge:** To merge the work from `dev-foo` into the master branch, perform these steps:
-   > TODO: write a description of the steps and the git command(s) for each step
+6. **Merge:** To merge the work from `dev-foo` into the master branch, perform these steps:
    1. step one
       ```
-      git do something
+      git checkout master
       ```
    2. step two
       ```
-      git do something else
+      git merge dev-foo
       ```
 
 
 6. Describe under what conditions a merge may fail.
 
+   :: Failure of merge may have cause when two people work on the same line but one deleted a file while the other modifying it. Git can't decide which one is correct. 
+This conflict will make the Git mark the file as being conflicted and stop the merging process.
 
 
 
