@@ -137,7 +137,7 @@ test/
 
 4. **Undo "git add":** If `main.py` has been added to the staging area (`git add main.py`), remove it from the staging area:
    ```
-   
+   git restore --staged main.py
    ```
 
 5. **Recover a file:** Command to replace your working copy of `a.py` with the most recent (HEAD) version in the repository.  This also works if you have deleted your working copy of this file.
@@ -151,7 +151,7 @@ test/
    ``` 
    The command to reset HEAD and master to the commit id `bbbb`:
    ```
-   
+   git reset --hard HEAD^2
    ```
 
 7. **Checkout old code:** Using the above example, the command to replace your working copy with the files from commit with id `aaaa`:
