@@ -120,19 +120,18 @@ test/
 
 ## Undo Changes and Recover Files
 
-> TODO: enter the git command to do each of these
 
 1. Display the differences between your *working copy* of `a.py` and the `a.py` in the *local repository* (HEAD revision):
    ```
-   
+   git diff HEAD a.py
    ```
 2. Display the differences between your *working copy* of `a.py` and the version in the *staging area*. (But, if a.py is not in the staging area this will compare working copy to HEAD revision):
    ```
-   
+   git diff 
    ```
 3. **View changes to be committed:** Display the differences between files in the staging area and the versions in the repository. (You can also specify a file name to compare just one file.) 
    ```
-   
+   git diff --staged
    ```
 
 4. **Undo "git add":** If `main.py` has been added to the staging area (`git add main.py`), remove it from the staging area:
@@ -142,7 +141,7 @@ test/
 
 5. **Recover a file:** Command to replace your working copy of `a.py` with the most recent (HEAD) version in the repository.  This also works if you have deleted your working copy of this file.
    ```
-   
+   git checkout -- a.py
    ```
 
 6. **Undo a commit:** Suppose you want to discard some commit(s) and move both HEAD and "master" to an earlier revision (an earlier commit)  Suppose the git commit graph looks like this (`aaaa`, etc, are the commit ids)
@@ -226,10 +225,12 @@ test/
 
 
 6. Describe under what conditions a merge may fail.
-
-   :: Failure of merge may have cause when two people work on the same line but one deleted a file while the other modifying it. Git can't decide which one is correct. 
-This conflict will make the Git mark the file as being conflicted and stop the merging process.
-
+   ```
+   Failure of merge may have cause when two peoplework on the same line but 
+   one deleted a file while the other modifying it. Git can't decide which 
+   one is correct. This conflict will make the Git mark the file as being 
+   conflicted and stop the merging process.
+   ```
 
 
 ## Favorites
