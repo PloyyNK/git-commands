@@ -140,7 +140,7 @@ test/
 
 7. **Checkout old code:** Using the above example, the command to replace your working copy with the files from commit with id `aaaa`:
    ```
-   todo your answer here
+   git reset --hard
    ```
     Note:
     - Git won't let you do this if you have uncommitted changes to any "tracked" files.
