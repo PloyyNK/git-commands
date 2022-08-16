@@ -221,6 +221,8 @@ test/
 ## Favorites
 
 - Create new directory: `mkdir <file-name>`
+- Check Git status: `git status`
+- review and read a history of repository: `git log`
 
 ---
 ## Resources
