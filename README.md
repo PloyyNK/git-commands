@@ -8,7 +8,7 @@
 [Favorites](#favorites)     
 [Resources](#resources)
 
-#### Note on Paths
+#### ***Note on Paths***
 
 In this file, directory paths are written with a forward slash as on MacOS, Linux, and the Windows-Bash shell: `/dir1/dir2/somefile`.    
 
