@@ -218,7 +218,7 @@ test/
    ```
 
 
-## Favorites
+## ***Favorites***
 
 - Create new directory: `mkdir <file-name>`
 - Check Git status: `git status`
