@@ -226,7 +226,7 @@ test/
 - List files in your local repo: `git ls-files`
 
 ---
-## Resources
+## ***Resources***
 
 [Git Guides](https://github.com/git-guides) Guides to Git from start to advanced commands and workflows.
 
