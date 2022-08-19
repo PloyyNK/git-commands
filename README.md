@@ -35,7 +35,7 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 
 4. When you create a git repository by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for this local repository (relative to the directory where you typed "git init")?
 
-   - It will create a subdirectory named `.git` that contains all of your necessary repository files.
+   >It will create a subdirectory named `.git` that contains all of your necessary repository files.
 
 
 ## Adding and Changing Things
@@ -177,7 +177,6 @@ test/
 
 ## Branch and Merge
 
-> TODO write the commands to do each of these
 1. Create a new branch named `dev-foo`:
    ```
    git checkout -b dev-foo
@@ -209,13 +208,12 @@ test/
       ```
 
 
-6. Describe under what conditions a merge may fail.
-   ```
-   Failure of merge may have cause when two peoplework on the same line but 
+6. Describe under what conditions a merge may fail. 
+>Failure of merge may have cause when two people work on the same line but 
    one deleted a file while the other modifying it. Git can't decide which 
    one is correct. This conflict will make the Git mark the file as being 
    conflicted and stop the merging process.
-   ```
+
 
 
 ## ***Favorites***
